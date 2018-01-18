@@ -43,7 +43,7 @@ syntax enable
 " Enable file specific behavior like syntax highlighting and indentation
 filetype on
 filetype plugin on
-filetype indent on
+"filetype indent on
 
 " Use the dark version of Solarized
 set background=dark
@@ -58,3 +58,18 @@ set t_ut=
 set guifont=DejaVu\ Sans\ Mono\ 10
 set antialias
 
+" Disabling the directional keys
+map <up> <nop>
+map <down> <nop>
+map <left> <nop>
+map <right> <nop>
+imap <up> <nop>
+imap <down> <nop>
+imap <left> <nop>
+imap <right> <nop>
+
+" Press the j 2 times in row
+:imap jj <Esc>
+
+" Remap Shift-Space for Esc
+:imap <S-Space> <Esc>
